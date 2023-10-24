@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "start": "npm run clean && stencil build --dev --watch --serve",
+    "clean": "rimraf dist www loader",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
