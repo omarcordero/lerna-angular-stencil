@@ -10,6 +10,6 @@ export class ButtonComponent {
   @Prop() text: string;
 
   render() {
-    return <button>{this.text}</button>;
+    return <button>{this.text} Test</button>;
   }
 }
